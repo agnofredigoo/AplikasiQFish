@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scanbg"
+    tools:context=".ScanPage">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="146dp"
+
+        android:layout_height="79dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+
+        android:layout_width="309dp"
+        android:layout_height="324.85dp"
+        android:src="@drawable/barcode"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <ImageButton
+        android:id="@+id/camerabotton"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:background="@drawable/scanbg"
+        android:src="@drawable/kamerabutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.132" />
+
+
+    <Button
+        android:id="@+id/unggahbutton"
+        android:layout_width="236dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonscan"
+        android:fontFamily="@font/poppinsregular"
+        android:text="@string/unggah"
+        android:textColor="@color/biru_dongker"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.657"
+
+
+        />
+
+    <ImageButton
+        android:id="@+id/gallerybotton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/scanbg"
+        android:src="@drawable/gallerybotton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.132" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
